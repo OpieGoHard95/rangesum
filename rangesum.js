@@ -11,3 +11,8 @@ var rangeArray = [];
 }
 
 console.log(range(1,6));
+
+var sum = function(rangeArray) {
+	var total = 0
+}
+console.log(sum(range(1, 6)))
