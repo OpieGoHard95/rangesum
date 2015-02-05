@@ -1,7 +1,6 @@
 // Code written by Jared Smith
 // Solving the Range Sum problem from Ch. 4
 // Code written on 2/3/15
-
 var range = function(start, end) {
 var rangeArray = [];
   for (var numRange = start; numRange <= end; numRange = numRange + 1)
@@ -13,6 +12,9 @@ var rangeArray = [];
 console.log(range(1,6));
 
 var sum = function(rangeArray) {
-	var total = 0
+	var total = 0;
+  	for (var arrayAdd = 0; arrayAdd < rangeArray.length; arrayAdd = arrayAdd + 1)
+      total += rangeArray[arrayAdd];
+  	return total;
 }
 console.log(sum(range(1, 6)))
